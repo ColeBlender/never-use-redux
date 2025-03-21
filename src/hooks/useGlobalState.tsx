@@ -1,10 +1,10 @@
 "use client";
 
-import { CartContext } from "@/providers/GlobalStateProvider";
+import { GlobalStateContext } from "@/providers/GlobalStateProvider";
 import { useContext } from "react";
 
 const useGlobalState = () => {
-  const context = useContext(CartContext);
+  const context = useContext(GlobalStateContext);
   if (!context) {
     throw new Error("useGlobalState must be used within a ContextProvider");
   }

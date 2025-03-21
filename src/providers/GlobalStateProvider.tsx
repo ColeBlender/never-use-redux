@@ -3,14 +3,14 @@
 import { User } from "@/types";
 import { createContext, Dispatch, SetStateAction, useState } from "react";
 
-type CartContextType = {
+type GlobalStateContextType = {
   user: User | null;
   setUser: Dispatch<SetStateAction<User | null>>;
 };
 
-export const CartContext = createContext<CartContextType | undefined>(
-  undefined
-);
+export const GlobalStateContext = createContext<
+  GlobalStateContextType | undefined
+>(undefined);
 
 function GlobalStateProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
@@ -18,7 +18,9 @@ function GlobalStateProvider({ children }: { children: React.ReactNode }) {
   const contextValue = { user, setUser };
 
   return (
-    <CartContext.Provider value={contextValue}>{children}</CartContext.Provider>
+    <GlobalStateContext.Provider value={contextValue}>
+      {children}
+    </GlobalStateContext.Provider>
   );
 }
 
