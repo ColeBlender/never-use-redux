@@ -2,7 +2,7 @@
 
 My links:
 
-- Full Tutorial 👉 https://youtu.be/S8JuA0IBBPc
+- Full Tutorial 👉 https://youtu.be/AtGywbdL_jA
 - Personal 👉 https://coleblender.com
 - Business 👉 https://superlativesites.com
 - YouTube 👉 https://youtube.com/@coleblender
